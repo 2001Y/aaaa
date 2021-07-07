@@ -1,15 +1,16 @@
 import { resolve, basename } from "path";
 import Head from "next/head";
+import Script from "next/script";
 
 export default function HomePage(e) {
   const { fourteen, fifteen, under } = e;
   return (
     <div>
       <Head>
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
-        <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+        <Script src="https://aframe.io/releases/1.0.4/aframe.min.js"></Script>
+        <Script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></Script>
+        <Script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></Script>
+        <Script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></Script>
       </Head>
 
       <body>
