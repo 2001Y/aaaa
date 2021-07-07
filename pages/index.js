@@ -7,7 +7,7 @@ export default function HomePage(e) {
   return (
     <div>
       <Head>
-        <Script src="https://aframe.io/releases/1.0.4/aframe.min.js"></Script>
+        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <Script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></Script>
         <Script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></Script>
         <Script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></Script>
@@ -85,7 +85,7 @@ export default function HomePage(e) {
 
 export async function getServerSideProps(context) {
   var min = 1;
-  var max = 28;
+  var max = 10;
   return {
     props: {
       fourteen: Math.floor(Math.random() * (max + 1 - min)) + min,
