@@ -5,7 +5,7 @@ import Script from "next/script";
 export default function HomePage(e) {
   const { fourteen, fifteen, under } = e;
   return (
-    <div>
+    <>
       <Head>
         {<script src={"https://aframe.io/releases/1.0.4/aframe.min.js"} />}
         {
@@ -96,7 +96,7 @@ export default function HomePage(e) {
           <a-entity camera></a-entity>
         </a-scene>
       </body>
-    </div>
+    </>
   );
 }
 
