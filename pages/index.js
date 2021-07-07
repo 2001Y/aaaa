@@ -6,13 +6,6 @@ export default function HomePage(e) {
   const { fourteen, fifteen, under } = e;
   return (
     <div>
-      <Head>
-        <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-        <Script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></Script>
-        <Script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></Script>
-        <Script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></Script>
-      </Head>
-
       <body>
         <a-scene
           vr-mode-ui="enabled: false;"
